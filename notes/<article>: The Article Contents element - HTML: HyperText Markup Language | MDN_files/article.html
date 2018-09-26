@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Shady DOM styles for shadow-output --><style scope="shadow-output">.output.shadow-output {
+  background-color:#fff;border:15px solid #eee;box-shadow:inset 5px 5px 10px rgba(0, 0, 0, .3), inset -5px -5px 10px rgba(0, 0, 0, .2);font-size:0.9rem;line-height:1.5;margin:24px 1em 0 0;overflow:scroll;padding:30px
+}
+
+.forecast.shadow-output {
+  margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast.shadow-output > h1.shadow-output,.day-forecast.shadow-output {
+  margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast.shadow-output {
+  background: right/contain content-box border-box no-repeat
+        url('/media/examples/rain.svg') white;
+}
+
+.day-forecast.shadow-output > h2.shadow-output,.day-forecast.shadow-output > p.shadow-output {
+  margin: .2rem;
+    font-size: 1rem;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HTML Demo: &lt;article&gt;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="article_data/codemirror-tabbed-5-31-0.css" rel="stylesheet">
+    <link href="article_data/tabbed-editor.css" rel="stylesheet">
+    <script>"use strict";function postToKuma(e){window.parent.postMessage(e,"https://developer.mozilla.org")}postToKuma({markName:"interactive-editor-loading"}),document.addEventListener("readystatechange",function(e){switch(e.target.readyState){case"interactive":postToKuma({markName:"interactive-editor-interactive",measureName:"ie-time-to-interactive",startMark:"interactive-editor-loading",endMark:"interactive-editor-interactive"});break;case"complete":postToKuma({markName:"interactive-editor-complete",measureName:"ie-time-to-complete",startMark:"interactive-editor-loading",endMark:"interactive-editor-complete"})}});</script>
+  </head>
+  <body>
+      <header class="output-header">
+        <h4>HTML Demo: &lt;article&gt;</h4>
+        <button id="reset" class="reset" type="button">Reset</button>
+      </header>
+      <div id="editor-container" class="editor-container tabbed-standard">
+          <section id="tab-container" class="tabs">
+              <div id="tablist" role="tablist">
+                  <button role="tab" aria-selected="true" aria-controls="html-panel" id="html">
+                      HTML
+                  </button>
+                  <button role="tab" aria-selected="false" aria-controls="css-panel" id="css" tabindex="-1">
+                      CSS
+                  </button>
+              </div>
+              <section id="html-panel" tabindex="0" role="tabpanel" aria-labelledby="html">
+<div id="html-editor"><pre class="hidden"><code>&lt;article class="forecast"&gt;
+    &lt;h1&gt;Weather forecast for Seattle&lt;/h1&gt;
+    &lt;article class="day-forecast"&gt;
+        &lt;h2&gt;03 March 2018&lt;/h2&gt;
+        &lt;p&gt;Rain.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class="day-forecast"&gt;
+        &lt;h2&gt;04 March 2018&lt;/h2&gt;
+        &lt;p&gt;Periods of rain.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class="day-forecast"&gt;
+        &lt;h2&gt;05 March 2018&lt;/h2&gt;
+        &lt;p&gt;Heavy rain.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/article&gt;
+</code></pre><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 7px; left: 39px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 354px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -12px; border-right-width: 18px; min-height: 354px; padding-right: 12px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 21.6px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">article</span> <span class="cm-attribute">class</span>=<span class="cm-string">"forecast"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Weather forecast for Seattle<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">article</span> <span class="cm-attribute">class</span>=<span class="cm-string">"day-forecast"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>03 March 2018<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Rain.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">article</span> <span class="cm-attribute">class</span>=<span class="cm-string">"day-forecast"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>04 March 2018<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Periods of rain.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">article</span> <span class="cm-attribute">class</span>=<span class="cm-string">"day-forecast"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>05 March 2018<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Heavy rain.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 18px; width: 1px; border-bottom: 0px solid transparent; top: 354px;"></div><div class="CodeMirror-gutters" style="height: 372px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div>
+              </section>
+              <section id="css-panel" tabindex="0" role="tabpanel" aria-labelledby="css" class="hidden">
+<div id="css-editor"><pre class="hidden"><code>.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast &gt; h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat
+        url('/media/examples/rain.svg') white;
+}
+
+.day-forecast &gt; h2,
+.day-forecast &gt; p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+</code></pre><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>25</div></div></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation">    <span class="cm-property">background</span>: <span class="cm-atom">right</span>/<span class="cm-atom">contain</span> <span class="cm-atom">content-box</span> <span class="cm-atom">border-box</span> <span class="cm-atom">no-repeat</span></span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+              </section>
+          </section>
+          <h4 class="output-label">Output</h4>
+          <div id="output" class="shadow-container">
+              <shadow-output><div class="output style-scope shadow-output" style="height: 92%;"><article class="forecast style-scope shadow-output">
+    <h1 class="style-scope shadow-output">Weather forecast for Seattle</h1>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">03 March 2018</h2>
+        <p class="style-scope shadow-output">Rain.</p>
+    </article>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">04 March 2018</h2>
+        <p class="style-scope shadow-output">Periods of rain.</p>
+    </article>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">05 March 2018</h2>
+        <p class="style-scope shadow-output">Heavy rain.</p>
+    </article>
+</article>
+</div></shadow-output>
+          <template id="code_tmpl"><div class="output style-scope shadow-output"><article class="forecast style-scope shadow-output">
+    <h1 class="style-scope shadow-output">Weather forecast for Seattle</h1>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">03 March 2018</h2>
+        <p class="style-scope shadow-output">Rain.</p>
+    </article>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">04 March 2018</h2>
+        <p class="style-scope shadow-output">Periods of rain.</p>
+    </article>
+    <article class="day-forecast style-scope shadow-output">
+        <h2 class="style-scope shadow-output">05 March 2018</h2>
+        <p class="style-scope shadow-output">Heavy rain.</p>
+    </article>
+</article>
+</div></template></div>
+      </div>
+
+    
+
+    <script src="article_data/codemirror-tabbed-5-31-0.js"></script>
+    <script src="article_data/tabbed-editor.js"></script>
+  
+
+</body></html>
