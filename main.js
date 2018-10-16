@@ -4,6 +4,14 @@ var hidingSection =document.getElementById('section');
 var hidingArticle =document.getElementById('article');
 var hidingAside =document.getElementById('aside');
 var hidingFooter =document.getElementById('footer');
+var semanticLink=document.getElementById('semantic-link');
+var navLink=document.getElementById('nav-link');
+var headerLink=document.getElementById('header-link');
+var sectionLink=document.getElementById('section-link');
+var articleLink= document.getElementById('article-link');
+var asideLink= document.getElementById("aside-link");
+var footerLink= document.getElementById("footer-link");
+
 /////////////SHOWING ONLY ONE SECTION OF THE CONTENT ////////////
 function showSemantics() {
 	semantics.style.display="block";
@@ -12,7 +20,13 @@ function showSemantics() {
 	hidingArticle.style.display="none";
 	hidingAside.style.display="none";
 	hidingFooter.style.display="none";
-	console.log('1');
+// background color
+	navLink.style.background="#d0d0f0";	
+	headerLink.style.background="none";
+	sectionLink.style.background="none";
+	articleLink.style.background="none";
+	asideLink.style.background="none";
+	footerLink.style.background="none";
 }
 showSemantics();
 function showHeader() {
@@ -22,7 +36,13 @@ function showHeader() {
 	hidingArticle.style.display="none";
 	hidingAside.style.display="none";
 	hidingFooter.style.display="none";
-	console.log(2);
+	// BACKGROUND COLOR
+	navLink.style.background="none";
+	headerLink.style.background="#d0d0f0";
+	sectionLink.style.background="none";
+	articleLink.style.background="none";
+	asideLink.style.background="none";
+	footerLink.style.background="none";
 }
 function showSection() {
 	semantics.style.display="none";
@@ -31,7 +51,13 @@ function showSection() {
 	hidingArticle.style.display="none";
 	hidingAside.style.display="none";
 	hidingFooter.style.display="none";
-}
+	// BACKGROUND COLOR
+	navLink.style.background="none";
+	headerLink.style.background="none";
+	sectionLink.style.background="#d0d0f0";
+	articleLink.style.background="none";
+	asideLink.style.background="none";
+	footerLink.style.background="none";}
 function showArticle() {
 	semantics.style.display="none";
 	hidingHeader.style.display="none";
@@ -39,6 +65,13 @@ function showArticle() {
 	hidingArticle.style.display="block";
 	hidingAside.style.display="none";
 	hidingFooter.style.display="none";
+		// BACKGROUND COLOR
+	navLink.style.background="none";
+	headerLink.style.background="none";
+	sectionLink.style.background="none";
+	articleLink.style.background="#d0d0f0";
+	asideLink.style.background="none";
+	footerLink.style.background="none";
 }
 function showAside() {
 	semantics.style.display="none";
@@ -47,6 +80,13 @@ function showAside() {
 	hidingArticle.style.display="none";
 	hidingAside.style.display="block";
 	hidingFooter.style.display="none";
+		// BACKGROUND COLOR
+	navLink.style.background="none";
+	headerLink.style.background="none";
+	sectionLink.style.background="none";
+	articleLink.style.background="none";
+	asideLink.style.background="#d0d0f0";
+	footerLink.style.background="none";
 }
 function showFooter() {
 	semantics.style.display="none";
@@ -55,10 +95,20 @@ function showFooter() {
 	hidingArticle.style.display="none";
 	hidingAside.style.display="none";
 	hidingFooter.style.display="block";
+		// BACKGROUND COLOR
+	navLink.style.background="none";
+	headerLink.style.background="none";
+	sectionLink.style.background="none";
+	articleLink.style.background="none";
+	asideLink.style.background="none";
+	footerLink.style.background="#d0d0f0";
 }
 /////////////SHOWING ONLY ONE SECTION OF THE CONTENT ////////////
 ////////CLICK EVENT TO CHOOSE WHAT SECTION TO BE DISPLAYED /////////
 document.querySelector('#semantic-link').addEventListener("click", function() {
+	showSemantics();
+});
+document.querySelector('#nav-link').addEventListener("click", function() {
 	showSemantics();
 });
 document.querySelector('#header-link').addEventListener("click", function() {
