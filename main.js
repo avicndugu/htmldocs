@@ -1,10 +1,4 @@
-var semantics= document.getElementById('semantics');
-var hidingHeader= document.getElementById('header');
-var hidingSection =document.getElementById('section');
-var hidingArticle =document.getElementById('article');
-var hidingAside =document.getElementById('aside');
-var hidingFooter =document.getElementById('footer');
-var semanticLink=document.getElementById('semantic-link');
+var semanticLink=document.getElementById('intro-link');
 var navLink=document.getElementById('nav-link');
 var headerLink=document.getElementById('header-link');
 var sectionLink=document.getElementById('section-link');
@@ -14,12 +8,6 @@ var footerLink= document.getElementById("footer-link");
 
 /////////////SHOWING ONLY ONE SECTION OF THE CONTENT ////////////
 function showSemantics() {
-	semantics.style.display="block";
-	hidingHeader.style.display="none";
-	hidingSection.style.display="none";
-	hidingArticle.style.display="none";
-	hidingAside.style.display="none";
-	hidingFooter.style.display="none";
 // background color
 	navLink.style.background="#d0d0f0";	
 	headerLink.style.background="none";
@@ -30,12 +18,6 @@ function showSemantics() {
 }
 showSemantics();
 function showHeader() {
-	semantics.style.display="none";
-	hidingHeader.style.display="block";
-	hidingSection.style.display="none";
-	hidingArticle.style.display="none";
-	hidingAside.style.display="none";
-	hidingFooter.style.display="none";
 	// BACKGROUND COLOR
 	navLink.style.background="none";
 	headerLink.style.background="#d0d0f0";
@@ -45,12 +27,6 @@ function showHeader() {
 	footerLink.style.background="none";
 }
 function showSection() {
-	semantics.style.display="none";
-	hidingHeader.style.display="none";
-	hidingSection.style.display="block";
-	hidingArticle.style.display="none";
-	hidingAside.style.display="none";
-	hidingFooter.style.display="none";
 	// BACKGROUND COLOR
 	navLink.style.background="none";
 	headerLink.style.background="none";
@@ -59,12 +35,6 @@ function showSection() {
 	asideLink.style.background="none";
 	footerLink.style.background="none";}
 function showArticle() {
-	semantics.style.display="none";
-	hidingHeader.style.display="none";
-	hidingSection.style.display="none";
-	hidingArticle.style.display="block";
-	hidingAside.style.display="none";
-	hidingFooter.style.display="none";
 		// BACKGROUND COLOR
 	navLink.style.background="none";
 	headerLink.style.background="none";
@@ -74,12 +44,6 @@ function showArticle() {
 	footerLink.style.background="none";
 }
 function showAside() {
-	semantics.style.display="none";
-	hidingHeader.style.display="none";
-	hidingSection.style.display="none";
-	hidingArticle.style.display="none";
-	hidingAside.style.display="block";
-	hidingFooter.style.display="none";
 		// BACKGROUND COLOR
 	navLink.style.background="none";
 	headerLink.style.background="none";
@@ -89,12 +53,6 @@ function showAside() {
 	footerLink.style.background="none";
 }
 function showFooter() {
-	semantics.style.display="none";
-	hidingHeader.style.display="none";
-	hidingSection.style.display="none";
-	hidingArticle.style.display="none";
-	hidingAside.style.display="none";
-	hidingFooter.style.display="block";
 		// BACKGROUND COLOR
 	navLink.style.background="none";
 	headerLink.style.background="none";
@@ -105,7 +63,7 @@ function showFooter() {
 }
 /////////////SHOWING ONLY ONE SECTION OF THE CONTENT ////////////
 ////////CLICK EVENT TO CHOOSE WHAT SECTION TO BE DISPLAYED /////////
-document.querySelector('#semantic-link').addEventListener("click", function() {
+document.querySelector('#intro-link').addEventListener("click", function() {
 	showSemantics();
 });
 document.querySelector('#nav-link').addEventListener("click", function() {

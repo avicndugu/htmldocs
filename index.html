@@ -30,30 +30,35 @@
 	finished working on seperate color on active navbar and propotional color 
 	-->
 	<div class="rows">
-		<div id="navigation">
+		<nav id="navbar">
 			<div class="container">
-				<ul>
-					<li id="semantic-link">HTML5 SEMANTICS</li>
-					<li id="nav-link">Nav</li>
-					<li id="header-link">Header</li>
-					<li id="section-link">Section</li>
-					<li id="article-link">Article</li>
-					<li id="aside-link">Aside</li>
-					<li id="footer-link">footer</li>
+				<header>HTML5 SEMANTICS</header>
+					<!-- id="semantic-link nav-link" -->
+					<a href="#Introduction" class="nav-link"><p id="intro-link">Introduction</p></a>
+					<a href="#Nav" class="nav-link"><p id="nav-link">Nav</p></a>
+					<a href="#Header" class="nav-link"><p id="header-link">Header</p></a>
+					<a href="#Section" class="nav-link"><p id="section-link">Section</p></a>
+					<a href="#Article" class="nav-link"><p id="article-link">Article</p></a>
+					<a href="#Aside" class="nav-link"><p id="aside-link">Aside</p></a>
+					<a href="#Footer" class="nav-link"><p id="footer-link">footer</p></a>
 					<!-- <li>Audio</li>
 					<li>Video</li>
 					<li>code</li> -->
-				</ul>
 			</div>
-		</div>
-		<div class="collumn2">
-			<div class="container" id="semantics">
-				<div class="left-section">
-					<h3 id="centered">HTML5 SEMANTICS</h3>
-					<p>Semantics allows you to describe your content more precisely. Instead of just using <code>&lt;div&gt;</code>tag, the these semantic tags are easily understood as they represent the sections that are on almost any website.</p>
-				</div>
-				<div class="left-section" id="Nav">
-					<h3 id="centered">NAV </h3>
+		</nav>
+	</div>
+		<main id="main-doc">
+			<section class="container main-section" id="Introduction">
+				<!-- <div class="left-section"> -->
+					<header>
+						<h3 id="centered">Introduction</h3>
+					</header>
+					<p>HTML5 semantics allows you to describe your content more precisely. Instead of just using <code>&lt;div&gt;</code>tag, the these semantic tags are easily understood as they represent the sections that are on almost any website.</p>
+				</section>
+				<section class="container main-section" id="Nav">
+					<header>
+						<h3 id="centered">NAV</h3>
+					</header>
 					<p>The HTML <code>&lt;nav&gt;</code> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
 					Example <br>
 					<code>
@@ -67,7 +72,6 @@
 						&lt;h1&gt;Jump Bike 3000&lt;/h1&gt;  <br>
 						&lt;p&gt;This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.&lt;/p&gt; <br>
 					</code>
-				
 					<nav class="crumbs">
 		    			<ol>
 		        			<li class="crumb"><a href="https://example.org/bikes">Bikes</a></li>
@@ -78,85 +82,91 @@
 					<h1>Jump Bike 3000</h1>
 					<p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
 				</div>
-			</div>
+			</section>
 
-	<div class="left-section container" id="header">
-		<h3 id="centered">HEADER</h3>
-		<p>The HTML <code>&lt;header&gt;</code> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on.</p>
-		<code>
-			&lt;header class="page-header"&gt; <br>
-			    &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt; <br>
-			&lt;/header&gt; <br>
+			<section class="main-section container" id="Header">
+				<header>
+					<h3 id="centered">Header</h3>
+				</header>
+				<p>The HTML <code>&lt;header&gt;</code> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on.</p>
+				<code>
+					&lt;header class="page-header"&gt; <br>
+					    &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt; <br>
+					&lt;/header&gt; <br>
 
-				&lt;main&gt; <br>
-				    &lt;p&gt;I love Beagles &lt;strong&gt;so&lt;/strong&gt; much! Like really, a lot. <br>
-				        They're adorable and their ears are so, so snuggly soft!&lt;/p&gt; <br>
-				&lt;/main&gt; <br>
-		</code>
-		<header class="page-header">
-		    <h1>Cute Puppies Express!</h1>
-		</header>
-		<main>
-		    <p>I love Beagles <strong>so</strong> much! Like really, a lot.
-		        They're adorable and their ears are so, so snuggly soft!</p>
-		</main>
-	</div>
-	<div class="left-section container" id="section">
-			<h3 id="centered">SECTION</h3>
-			<span><p>The HTML <code>&#60;section&#62;</code> element represents a standalone section which doesn't have a more specific semantic element to represent it contained within an HTML document.</span> Typically, but not always, sections have a heading.</p>
+						&lt;main&gt; <br>
+						    &lt;p&gt;I love Beagles &lt;strong&gt;so&lt;/strong&gt; much! Like really, a lot. <br>
+						        They're adorable and their ears are so, so snuggly soft!&lt;/p&gt; <br>
+						&lt;/main&gt; <br>
+				</code>
+				<header class="page-header">
+				    <h1>Cute Puppies Express!</h1>
+				</header>
+				<main>
+				    <p>I love Beagles <strong>so</strong> much! Like really, a lot.
+				        They're adorable and their ears are so, so snuggly soft!</p>
+				</main>
+			</section>
+			<section class=" main-section container" id="Section">
+					<header>
+						<h3 id="centered">Section</h3>
+					</header>
+					<span><p>The HTML <code>&#60;section&#62;</code> element represents a standalone section which doesn't have a more specific semantic element to represent it contained within an HTML document.</span> Typically, but not always, sections have a heading.</p>
 
-				Example 1<br>
-				Before<br>
-			<code>
-				&lt;div&gt; <br>
-				  &lt;h1&gt;Heading&lt;/h1&gt;<br>
-				  &lt;p&gt;Bunch of awesome content&lt;/p&gt;<br>
-				&lt;/div&gt;<br><br>
-			</code>
-				After<br>
-			<code>
-				&lt;section&gt;<br>
-				  &lt;h1&gt;Heading&lt;/h1&gt;<br>
-				  &lt;p&gt;Bunch of awesome content&lt;/p&gt;<br>
-				&lt;/section&gt;<br>
-			</code>
+						Example 1<br>
+						Before<br>
+					<code>
+						&lt;div&gt; <br>
+						  &lt;h1&gt;Heading&lt;/h1&gt;<br>
+						  &lt;p&gt;Bunch of awesome content&lt;/p&gt;<br>
+						&lt;/div&gt;<br><br>
+					</code>
+						After<br>
+					<code>
+						&lt;section&gt;<br>
+						  &lt;h1&gt;Heading&lt;/h1&gt;<br>
+						  &lt;p&gt;Bunch of awesome content&lt;/p&gt;<br>
+						&lt;/section&gt;<br>
+					</code>
 
-		Example 2
+				Example 2
 
-			<code>
-				&lt;article&gt; <br>
-				    &lt;hgroup&gt; <br>
-				        &lt;h1&gt;Fishing for Beginners&lt;/h1&gt; <br>
-				        &lt;h2&gt;A getting-started guide&lt;/h2&gt; <br>
-				    &lt;/hgroup&gt; <br>
-				    &lt;section&gt; <br>
-				        &lt;h1&gt;Introduction&lt;/h1&gt; <br>
-				        &lt;p&gt;People have been catching fish for food since before recorded history...&lt;/p&gt; <br>
-				    &lt;/section&gt; <br>
-				    &lt;section&gt; <br>
-				        &lt;h1&gt;Equipment&lt;/h1&gt; <br>
-				        &lt;p&gt;The first thing you'll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you're expecting to try to land...&lt;/p&gt; <br>
-				    &lt;/section&gt; <br>
-				&lt;/article&gt; <br>
-			</code>
+					<code>
+						&lt;article&gt; <br>
+						    &lt;hgroup&gt; <br>
+						        &lt;h1&gt;Fishing for Beginners&lt;/h1&gt; <br>
+						        &lt;h2&gt;A getting-started guide&lt;/h2&gt; <br>
+						    &lt;/hgroup&gt; <br>
+						    &lt;section&gt; <br>
+						        &lt;h1&gt;Introduction&lt;/h1&gt; <br>
+						        &lt;p&gt;People have been catching fish for food since before recorded history...&lt;/p&gt; <br>
+						    &lt;/section&gt; <br>
+						    &lt;section&gt; <br>
+						        &lt;h1&gt;Equipment&lt;/h1&gt; <br>
+						        &lt;p&gt;The first thing you'll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you're expecting to try to land...&lt;/p&gt; <br>
+						    &lt;/section&gt; <br>
+						&lt;/article&gt; <br>
+					</code>
 
-			<article>
-			    <hgroup>
-			        <h1>Fishing for Beginners</h1>
-			        <h2>A getting-started guide</h2>
-			    </hgroup>
-			    <section>
-			        <h1>Introduction</h1>
-			        <p>People have been catching fish for food since before recorded history...</p>
-			    </section>
-			    <section>
-			        <h1>Equipment</h1>
-			        <p>The first thing you'll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you're expecting to try to land...</p>
-			    </section>
-			</article>
-	</div>
-		<div class="left-section container" id="article">
-			<h3 id="centered">ARTICLE</h3>
+					<article>
+					    <hgroup>
+					        <h1>Fishing for Beginners</h1>
+					        <h2>A getting-started guide</h2>
+					    </hgroup>
+					    <section>
+					        <h1>Introduction</h1>
+					        <p>People have been catching fish for food since before recorded history...</p>
+					    </section>
+					    <section>
+					        <h1>Equipment</h1>
+					        <p>The first thing you'll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you're expecting to try to land...</p>
+					    </section>
+					</article>
+			</section>
+		<section class=" main-section container" id="Article">
+			<header>
+				<h3 id="centered">Article</h3>
+			</header>
 			<p>The HTML <code> &lt;article&gt; </code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.</p>
 			<code>
 				&lt;article class="forecast"&gt; <br>
@@ -190,20 +200,22 @@
 			        <p>Heavy rain.</p>
 			    </article>
 			</article>	
-	</div>
-	<div class="left-section container" id="aside">
-			<h3 id="centered">ASIDE</h3>
+		</section>
+		<section class="main-section container" id="Aside">
+			<header>
+				<h3 id="centered">Aside</h3>
+			</header>
 			<p>The HTML <code>&lt;aside&gt;</code> element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
 			<p>Example</p>
-		<code>
-			&lt;p&gt;Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.&lt;/p&gt; <br>
+			<code>
+				&lt;p&gt;Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.&lt;/p&gt; <br>
 
-			&lt;aside&gt; <br>
-			    &lt;p&gt;The Rough-skinned Newt defends itself with a deadly neurotoxin.&lt;/p&gt; <br>
-			&lt;/aside&gt; <br>
+				&lt;aside&gt; <br>
+				    &lt;p&gt;The Rough-skinned Newt defends itself with a deadly neurotoxin.&lt;/p&gt; <br>
+				&lt;/aside&gt; <br>
 
-			&lt;p&gt;Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.&lt;/p&gt; <br>
-		</code>
+				&lt;p&gt;Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.&lt;/p&gt; <br>
+			</code>
 
 			<p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
 
@@ -212,9 +224,11 @@
 			</aside>
 
 			<p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
-	</div>
-	<div class="left-section container" id="footer">
-		<h3 id="centered">FOOTER</h3>
+	</section>
+	<section class="main-section container" id="Footer">
+		<header>
+			<h3 id="centered">Footer</h3>
+		</header>
 		<p>The HTML <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
 		<p>Example</p>
 		<code>
@@ -250,8 +264,8 @@
 		        <li>About</li>
 		    </ul>
 		</footer>
-	</div>
-</div>
+	</section>
+</main>
 	<!-- <div class="" id="Audio">
 		<div>
 			
@@ -268,10 +282,7 @@
 		</div>
 	</div> -->
 
-	<footer>
-		
-	</footer>
-
 	<script type="text/javascript" src="main.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

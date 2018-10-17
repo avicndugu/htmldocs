@@ -11,25 +11,33 @@ h5,h4,h6,h3,h2,h1,a,p{
 code {
 	font-size: 16px;
 }
-#navigation {
+#navbar {
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-#navigation ul {
+
+#navbar a {
+	text-decoration:none;
+	color:#000;
+}
+#navbar ul {
 	list-style-type: none; 
 }
-
-#navigation li{
+#navbar header {
+	padding:20px 30px;
+	background:#f0f0f0;	
+}
+#navbar p{
 	border-top: 1px solid #000;
-	/*margin:10px;*/
-	padding:20px 10px;
+	margin:0px;
+	padding:20px 0px 20px 40px;
 	background:#f0f0f0;
 	/*#cf7ef3;*/
 	/*#f3957e;*/
 }
-#navigation li:last-child {
+/*#navbar li:last-child {
 	border-bottom: 1px solid #000;
-}
+}*/
 
 #centered {
 text-align: center;
@@ -44,14 +52,14 @@ h3 {
 .rows {
 width:100%;
 }
-#navigation{
+#navbar{
 	width: 25%;
 	float:left;
 	position: fixed;
 	top:0;
 	left:0;
 }
-.collumn2 {
+#main-doc {
 	width:75%;
 	float:right;
 }
