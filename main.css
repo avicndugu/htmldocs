@@ -1,12 +1,15 @@
 html, body, nav, section, footer, div{
 	margin:0;
-	/*font-size: 20px;*/
+	font-size: 16px;
 }
 body{
 	background:#f9f9f9;
 }
 h5,h4,h6,h3,h2,h1,a,p{
 	font-size: 17px;
+}
+code {
+	font-size: 16px;
 }
 #navigation {
 	margin-top: 30px;
@@ -28,10 +31,12 @@ h5,h4,h6,h3,h2,h1,a,p{
 	border-bottom: 1px solid #000;
 }
 
-/*.left-section{
-	width: 50%;
-/*	height:500px;*/
-/*}*/
+#centered {
+text-align: center;
+}
+h3 {
+	font-size: 18px;
+}
 
 
 
